@@ -1,0 +1,59 @@
+.backgroundMModal{
+    background-color: rgba(102, 102, 102, 0.438);
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    inset: 0;
+    /* inset button right top 0 */
+    backdrop-filter: blur(6px);
+    /* transition: all .10s ease-in-out; */
+}
+
+.ContainerForm{
+    margin: auto;
+    width: 25rem;
+    position: relative;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    background-color: #333;
+    padding: 1rem;
+}
+@media (max-width: 600px) {
+    .ContainerForm {
+      width: 15rem;
+    }
+  }
+.ContainerForm div{
+    display: flex;
+    justify-content: end;
+}
+.ContainerForm div button{
+    width: 2rem;
+    height: 1.3rem;
+    display: grid;
+    place-content: center;
+    font-weight: 700 ;
+    border-radius: 50px;
+    border: none;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+}
+.ContainerForm .btnAdd{
+    display: flex;
+    justify-content: center;
+}
+.ContainerForm .btnAdd .btn{
+    width: 30%;
+    height: 1.8rem;
+    margin-top: 1rem;
+    background-color: rgba(89, 89, 194, 0.86);
+}
+.ContainerForm .btnAdd .btn:hover{
+    background-color: rgb(55, 55, 236);
+    transition: all .9s ;
+}
+.ContainerForm input{
+    margin-bottom: 5px;
+}
